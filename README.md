@@ -1,3 +1,6 @@
 # Aluno #
 
-- Marcelo Piluski Pozzobon# devops-calculator-ci
+- Marcelo Piluski Pozzobon
+- Gabriel Paludo Franceschini
+- Luís Henrique Araujo Figueiredo
+- Rafael Aschidamini Vicini
