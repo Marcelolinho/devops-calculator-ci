@@ -14,9 +14,11 @@ def test_total_com_dez_por_cento_de_desconto():
 
     assert calcular_total(itens, desconto_percentual=10) == 225.0
 
+def test_desconto_valor_flutuante():
+    itens = [(100.0, 2), (50.0, 1)]
+
+    assert calcular_total(itens, desconto_percentual=10.5) == 223.75
 
 def test_desconto_invalido():
     with pytest.raises(ValueError):
         calcular_total([(100.0, 1)], desconto_percentual=110)
-
-def 
