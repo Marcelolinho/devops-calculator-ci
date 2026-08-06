@@ -16,5 +16,18 @@ def calcular_total(itens, desconto_percentual=0):
     # Defeito proposital:
     # o desconto percentual esta sendo subtraido como valor monetario.
     total = subtotal - (subtotal * (desconto_percentual / 100))
+    
 
-    return round(total, 2)
+CUPON_DESCONTO = {
+    "DEVOPS10" : 10,
+}
+
+def desconto_cupom(cupom):
+    if cupom is None:
+        return  0
+    
+    codigo = cupom.strip().upper()
+    if codigo not in CUPON_DESCONTO:
+        raise ValueError("Cupom nao disponivel")
+    
+    return CUPON_DESCONTO [codigo]
